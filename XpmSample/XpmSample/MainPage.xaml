@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XpmSample.MainPage">
+
+    <FlexLayout Direction="Column" AlignContent="Stretch">
+
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="XPM Sample" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <FlexLayout FlexLayout.Grow="1" AlignItems="Center" Margin="25,0" HeightRequest="50">
+
+            <Entry x:Name="TextToLogEntry"
+                   FlexLayout.Grow="1"
+                   VerticalOptions="FillAndExpand"
+                   Placeholder="Enter text to log"
+                   HeightRequest="50"
+                   Text="Log me"
+                   Completed="Entry_Completed"/>
+
+            <Button Margin="5,0"
+                    Padding="20,0"
+                    HeightRequest="50"
+                    VerticalOptions="FillAndExpand"
+                    Text="Log"
+                    TextTransform="None"
+                    BindingContext="{x:Reference Name=TextToLogEntry}"
+                    IsEnabled="{Binding Path=Text.Length, Mode=OneWay}"
+                    Clicked="Log_Button_Clicked" />
+
+        </FlexLayout>
+
+        <Button Text="Say hello!"
+                Margin="25"
+                TextColor="White"
+                BackgroundColor="#2196F3"
+                TextTransform="None"
+                Clicked="Hello_Button_Clicked"/>
+
+    </FlexLayout>
+
+</ContentPage>

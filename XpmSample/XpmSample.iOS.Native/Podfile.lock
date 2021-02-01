@@ -1,0 +1,16 @@
+PODS:
+  - XamarinPlatformMessaging (1.0.0)
+
+DEPENDENCIES:
+  - XamarinPlatformMessaging (from `~/xpm/ios/`)
+
+EXTERNAL SOURCES:
+  XamarinPlatformMessaging:
+    :path: "~/xpm/ios/"
+
+SPEC CHECKSUMS:
+  XamarinPlatformMessaging: a181d05118aab1ca20db1b99a165bec8e7fadb2f
+
+PODFILE CHECKSUM: fa4042ddff2238529e38003d8903be8ad987927a
+
+COCOAPODS: 1.10.0

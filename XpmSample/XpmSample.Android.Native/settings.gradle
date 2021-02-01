@@ -1,0 +1,3 @@
+include ':xpmsamplelib'
+include ':app'
+rootProject.name = "XpmSample"
