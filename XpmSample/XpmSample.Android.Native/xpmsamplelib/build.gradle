@@ -36,5 +36,7 @@ android {
 }
 
 dependencies {
-    implementation(name:'xamarin-platform-messaging', ext:'aar')
+    // implementation(name:'xamarin-platform-messaging', ext:'aar')
+    implementation 'com.xamarin:platformmessaging:0.1.0'
+
 }
