@@ -2,6 +2,9 @@ plugins {
     id 'com.android.library'
 }
 
+// Apply the Xamarin.Binding.Helpers gradle plugin
+apply from: 'https://raw.githubusercontent.com/Redth/Xamarin.Binding.Helpers/main/Xamarin.Binding.Helpers/FetchXamarinBindingInfo.gradle'
+
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
